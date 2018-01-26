@@ -1,0 +1,36 @@
+{
+  "name": "reactchartsbackend",
+  "version": "1.0.0",
+  "description": "React Charts Backend",
+  "main": "app.js",
+  "scripts": {
+    "start": "concurrently \"yarn run backend\" \"yarn run frontend\"",
+    "frontend": "webpack --config=webpack.config.js",
+    "backend": "babel-node ./server/server.js"
+  },
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "bootstrap": "^4.0.0",
+    "concurrently": "^3.5.1",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.12.9"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "css-loader": "^0.28.1",
+    "file-loader": "^1.1.6",
+    "node-sass": "^4.5.3",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.19.1",
+    "url-loader": "^0.6.2",
+    "webpack": "^3.10.0"
+  },
+  "author": "Brett Merrifield",
+  "license": "ISC"
+}

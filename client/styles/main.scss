@@ -1,0 +1,13 @@
+$background-color: black;
+$app-title-color: #00796b;
+
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+body {
+  color: $app-title-color;
+  background-color: $background-color;
+}
