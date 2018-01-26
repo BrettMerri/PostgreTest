@@ -52,7 +52,7 @@ const requestHandler = (request, response) => {
 
 const server = http.createServer(requestHandler);
 
-const portNumber = process.env.port || 3030;
+const portNumber = process.env.PORT || 3030;
 
 server.listen(portNumber, () => {
   console.log(`Server listening on port ${portNumber}`);

@@ -53,8 +53,7 @@ const config = {
         $: 'jquery',
         jquery: 'jquery'
     })
-  ],
-  watch: true,
+  ]
 };
 
 module.exports = config;

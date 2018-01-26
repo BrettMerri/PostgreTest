@@ -5,8 +5,9 @@
   "main": "app.js",
   "scripts": {
     "start": "concurrently \"yarn run backend\" \"yarn run frontend\"",
-    "frontend": "webpack --config=webpack.config.js",
-    "backend": "babel-node ./server/server.js"
+    "frontend": "webpack --watch --config=webpack.config.js",
+    "backend": "babel-node ./server/server.js",
+    "prod": "webpack --config=webpack.config.js && babel-node ./server/server.js"
   },
   "dependencies": {
     "babel-cli": "^6.26.0",
