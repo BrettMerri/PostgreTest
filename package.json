@@ -5,10 +5,10 @@
   "main": "server/bin/server.js",
   "scripts": {
     "dev": "webpack-dev-server --config webpack/client.dev.js",
-    "build": "npm run build:client && npm run build:server",
+    "build": "yarn run build:client && yarn run build:server",
     "build:server": "cross-env NODE_ENV=production webpack --config webpack/server.prod.js --progress",
     "build:client": "cross-env NODE_ENV=production webpack --config webpack/client.prod.js --progress",
-    "heroku-postbuild": "npm run build",
+    "heroku-postbuild": "yarn run build",
     "start": "cd server && node bin/server.js",
     "lint": "eslint --ext .jsx,.js ./"
   },
@@ -47,7 +47,7 @@
   "devDependencies": {
     "babel-core": "^6.10.4",
     "babel-loader": "^7.1.1",
-    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.11.1",
     "babel-preset-stage-1": "^6.5.0",
     "css-loader": "^0.28.7",
